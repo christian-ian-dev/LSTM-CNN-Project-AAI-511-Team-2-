@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IPYNB checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data and large files (Do not upload raw music files to GitHub)
+data/
+*.midi
+*.mid
+*.zip
+
+# Model weights and checkpoints
+*.h5
+*.keras
+*.ckpt
+checkpoint/
+
+# OS generated files
+.DS_Store
+Thumbs.db
