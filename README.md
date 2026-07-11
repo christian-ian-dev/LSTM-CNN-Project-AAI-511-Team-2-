@@ -1,3 +1,13 @@
+# Deep Learning for Classical Composer Identification
+
+Using Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks to accurately identify classical music composers from MIDI files.
+
+---
+## Contributors
+* **Christian Lopez**
+* **Idrees Khan**
+* **Lashana Narayan**
+
 ## Project Overview
 Identifying the composer of a piece of music is an intricate task, historically requiring expert musicological knowledge. This project leverages deep learning architectures to automate the classification of musical scores. By transforming MIDI files into structured sequences and 2D piano-roll representations, we train and compare **LSTM** and **CNN** models to classify compositions among four legendary composers: **Bach, Beethoven, Chopin, and Mozart**.
 
@@ -29,7 +39,20 @@ For this scope, the data is restricted to:
 
 ---
 
-## 🗂️ Repository Structure
+## Libraries & Tools Used
+
+This project relies on several key open-source libraries for data processing, music analysis, and deep learning:
+
+* **TensorFlow / Keras:** For building, training, and evaluating the LSTM and CNN architectures.
+* **pretty_midi:** For parsing, manipulating, and extracting piano-roll matrices from MIDI files.
+* **music21:** For extracting musicological features (notes, chords, tempo) from the scores.
+* **scikit-learn:** For data splitting (train/test split) and calculating evaluation metrics (Precision, Recall, Confusion Matrices).
+* **NumPy & Pandas:** For array manipulation, sequence formatting, and structuring datasets.
+* **Matplotlib / Seaborn:** For visualizing training loss/accuracy curves and confusion matrices.
+
+---
+
+## Repository Structure
 ```text
 ├── .gitignore               # Excludes datasets, virtual environments, and model weights
 ├── README.md                # Project documentation
