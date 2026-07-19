@@ -19,8 +19,14 @@ Identifying the composer of a piece of music is an intricate task, historically 
 * Optimize performance via hyperparameter tuning.
 
 ## Dataset
+
 The project utilizes a filtered subset of the Kaggle [MIDI Classic Music Dataset](https://www.kaggle.com/datasets/blanderbuss/midi-classic-music), which contains 3,929 MIDI files across 175 composers. 
-For this scope, the data is restricted to:
+
+To facilitate seamless team collaboration without requiring local Kaggle API keys, the dataset has been securely hosted on a shared Google Drive. You can view or manually download the dataset file here: 
+**[Google Drive Dataset Link - midi-classic-music.zip](https://drive.google.com/file/d/1QJPbVi6q2QPIiD47ZBf9tDxhM4ON-7mj/view?usp=share_link)**
+The notebooks are configured to automatically download and extract this dataset directly into the cloud environment's temporary storage using the `gdown` library.
+
+For this scope, the data is restricted and balanced across four targets:
 * Johann Sebastian Bach
 * Ludwig van Beethoven
 * Frédéric Chopin
@@ -47,6 +53,7 @@ This project relies on several key open-source libraries for data processing, mu
 * **pretty_midi:** For parsing, manipulating, and extracting piano-roll matrices from MIDI files.
 * **music21:** For extracting musicological features (notes, chords, tempo) from the scores.
 * **scikit-learn:** For data splitting (train/test split) and calculating evaluation metrics (Precision, Recall, Confusion Matrices).
+* **gdown:** For securely downloading dataset zips directly from Google Drive into the cloud runtime.
 * **NumPy & Pandas:** For array manipulation, sequence formatting, and structuring datasets.
 * **Matplotlib / Seaborn:** For visualizing training loss/accuracy curves and confusion matrices.
 
